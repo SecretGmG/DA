@@ -1,0 +1,14 @@
+Mode: list, Number of points searched: 1000, Number of points 5000, Time: 60ms
+Mode: list, Number of points searched: 1000, Number of points 10000, Time: 54ms
+Mode: list, Number of points searched: 1000, Number of points 15000, Time: 93ms
+Mode: list, Number of points searched: 1000, Number of points 20000, Time: 110ms
+Mode: list, Number of points searched: 1000, Number of points 25000, Time: 131ms
+Mode: list, Number of points searched: 1000, Number of points 30000, Time: 160ms
+
+
+Mode: tree, Number of points searched: 1000, Number of points 500000, Time: 3ms
+Mode: tree, Number of points searched: 1000, Number of points 1000000, Time: 2ms
+Mode: tree, Number of points searched: 1000, Number of points 1500000, Time: 2ms
+Mode: tree, Number of points searched: 1000, Number of points 2000000, Time: 3ms
+Mode: tree, Number of points searched: 1000, Number of points 2500000, Time: 2ms
+Mode: tree, Number of points searched: 1000, Number of points 3000000, Time: 2ms

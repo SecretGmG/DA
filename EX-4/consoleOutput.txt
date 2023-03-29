@@ -1,0 +1,54 @@
+
+Radix Sort ---------------
+
+d = 100
+N*D = 4 E6 ,Time = 681ms
+N*D = 8 E6 ,Time = 1326ms
+N*D = 12 E6 ,Time = 1651ms
+N*D = 16 E6 ,Time = 2278ms
+N*D = 20 E6 ,Time = 2819ms
+N*D = 24 E6 ,Time = 4000ms
+
+d = 50
+N*D = 4 E6 ,Time = 823ms
+N*D = 8 E6 ,Time = 1275ms
+N*D = 12 E6 ,Time = 1750ms
+N*D = 16 E6 ,Time = 2510ms
+N*D = 20 E6 ,Time = 2946ms
+N*D = 24 E6 ,Time = 3870ms
+
+
+d = 200
+N*D = 4000000 E6   Time = 681ms
+N*D = 8000000 E6   Time = 1267ms
+N*D = 12000000 E6   Time = 1488ms
+N*D = 16000000 E6   Time = 1970ms
+N*D = 20000000 E6   Time = 2928ms
+N*D = 24000000 E6   Time = 3638ms
+
+MySort ------------------
+
+d = 100
+letters = 2 E6 ,Time = 538ms
+letters = 4 E6 ,Time = 1489ms
+letters = 6 E6 ,Time = 1000ms
+letters = 8 E6 ,Time = 1551ms
+letters = 10 E6 ,Time = 2142ms
+letters = 12 E6 ,Time = 2152ms
+
+d = 50
+letters = 2 E6 ,Time = 539ms
+letters = 4 E6 ,Time = 1720ms
+letters = 6 E6 ,Time = 1132ms
+letters = 8 E6 ,Time = 1507ms
+letters = 10 E6 ,Time = 1599ms
+letters = 12 E6 ,Time = 2120ms
+
+
+d = 200
+letters = 2 E6 ,Time = 854ms
+letters = 4 E6 ,Time = 401ms
+letters = 6 E6 ,Time = 695ms
+letters = 8 E6 ,Time = 1641ms
+letters = 10 E6 ,Time = 2393ms
+letters = 12 E6 ,Time = 1512ms
