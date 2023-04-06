@@ -1,6 +1,9 @@
+package bouncingBalls;
+
 import java.awt.*;
 import java.awt.geom.*;
-import java.util.*;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 /**
  * Implements a bouncing ball simulation.
@@ -133,9 +136,9 @@ public class BouncingBallsSimulation extends Component implements Runnable {
 
             // Print time per simulation step.
             c++;
-            if(c==10)
+            if(c==500)
             {
-                System.out.printf("Timer per simulation step: %fms\n", (float)timer.timeElapsed()/(float)c);
+                System.out.printf("bouncingBalls.Timer per simulation step: %fms\n", (float)timer.timeElapsed()/(float)c);
                 timer.reset();
                 c = 0;
             }

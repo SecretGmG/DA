@@ -1,3 +1,5 @@
+package bouncingBalls;
+
 import javax.swing.*;
 
 /**
@@ -10,8 +12,20 @@ public class BouncingBalls {
         JFrame frame = new JFrame("Bouncing Balls");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        int w = 500;
+        int h = 500;
+        int n = 2000;
+        float r = 4.f;
+        float v = 0.2f;
+
+        System.out.printf(
+                "width, height: %d, %d \n" +
+                "number of particles %d \n" +
+                "radius of particles %.3f \n"
+                ,w,h,n,r);
+
         // Initialize the simulation and add it to the main frame.
-        BouncingBallsSimulation simulation = new BouncingBallsSimulation(1000,1000, 1000, 4.f, 0.2f);
+        BouncingBallsSimulation simulation = new MyBouncingBallsSimulation(w, h, n, r, v, 4);
         frame.add(simulation);
         simulation.setVisible(true);
 
