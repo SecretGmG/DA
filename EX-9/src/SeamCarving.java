@@ -1,6 +1,5 @@
 import java.awt.image.*;
 import java.io.File;
-
 import javax.imageio.ImageIO;
 
 public class SeamCarving {
@@ -33,6 +32,14 @@ public class SeamCarving {
         }
         return costs;
     }
+
+    /**
+     * Calculates the nim of the numbers a, b, c
+     * @param a
+     * @param b
+     * @param c
+     * @return
+     */
     public static float min(float a, float b, float c){
         return Math.min(a,Math.min(b,c));
     }
@@ -72,11 +79,22 @@ public class SeamCarving {
 
         return seam;
     }
+
+    /**
+     * calculates the offset to the neighbour with the smallest cost
+     * @param a
+     * @param b
+     * @param c
+     * @return
+     *      0 if min(a,b,c) == b
+     *      1 if min(a,b,c) == c
+     *     -1 if min(a,b,c) == a
+     */
     public static int offset(float a, float b, float c){
         if (a<b && a<c){
             return -1;
         }
-        if (b < c){
+        if (b <= c){
             return 0;
         }
         return 1;
@@ -193,7 +211,7 @@ public class SeamCarving {
         int seam[];
 
         try {
-            img = ImageIO.read(new File("EX-9/test2.jpg"));
+            img = ImageIO.read(new File("EX-9/test3.jpg"));
         } catch (Exception e) {
             System.out.printf("Could not read image file!\n");
             return;
@@ -212,7 +230,7 @@ public class SeamCarving {
 
             if (n % 50 == 0) {
                 try {
-                    ImageIO.write(img, "png", new File("results/result2_" + Integer.toString(n) + ".png"));
+                    ImageIO.write(img, "png", new File("results/result3_" + Integer.toString(n) + ".png"));
                 } catch (Exception e) {
                     e.printStackTrace();
                     return;
