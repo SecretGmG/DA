@@ -62,48 +62,54 @@ Second Hash Probing:
 0,4,8,1,5,9,
 [44, 56, 24, 0, 7, 23, 13, 18, 19, 33, 0]
 
-//1000
-
 width, height: 500, 500
 number of particles 1000
-grid size: 250, 250
-myBouncingBalls.Timer per simulation step: 1.802000ms
+radius of particles 4.000
+grid size: 100, 100
+myBouncingBalls.Timer per simulation step: 2.246000ms
 
+grid size: 200, 200
+myBouncingBalls.Timer per simulation step: 1.784000ms
 
-width, height: 500, 500
-number of particles 1000
-grid size: 500, 500
-myBouncingBalls.Timer per simulation step: 1.082000ms
+grid size: 300, 300
+myBouncingBalls.Timer per simulation step: 2.334000ms
 
-
-width, height: 500, 500
-number of particles 1000
-grid size: 1000, 1000
-myBouncingBalls.Timer per simulation step: 1.368000ms
-
-
-width, height: 500, 500
-number of particles 1000
-grid size: 2000, 2000
-myBouncingBalls.Timer per simulation step: 1.628000ms
-
-//2000
+grid size: 400, 400
+myBouncingBalls.Timer per simulation step: 3.322000ms
 
 width, height: 500, 500
 number of particles 2000
 radius of particles 4.000
-grid size: 125, 125
-myBouncingBalls.Timer per simulation step: 4.644000ms
+grid size: 100, 100
+myBouncingBalls.Timer per simulation step: 4.942000ms
+
+
+grid size: 200, 200
+myBouncingBalls.Timer per simulation step: 3.096000ms
+
+
+grid size: 300, 300
+myBouncingBalls.Timer per simulation step: 4.366000ms
+
+grid size: 400, 400
+myBouncingBalls.Timer per simulation step: 6.046000ms
+
+
 
 width, height: 500, 500
-number of particles 2000
+number of particles 3000
 radius of particles 4.000
-grid size: 250, 250
-myBouncingBalls.Timer per simulation step: 2.798000ms
+grid size: 100, 100
+myBouncingBalls.Timer per simulation step: 7.784000ms
 
 
-width, height: 500, 500
-number of particles 2000
-radius of particles 4.000
-grid size: 500, 500
-myBouncingBalls.Timer per simulation step: 2.240000ms
+grid size: 200, 200
+myBouncingBalls.Timer per simulation step: 4.278000ms
+
+
+grid size: 300, 300
+myBouncingBalls.Timer per simulation step: 5.548000ms
+
+
+grid size: 400, 400
+myBouncingBalls.Timer per simulation step: 8.608000ms

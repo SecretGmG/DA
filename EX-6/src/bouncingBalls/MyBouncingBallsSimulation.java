@@ -17,17 +17,15 @@ public class MyBouncingBallsSimulation extends BouncingBallsSimulation{
      * @param r radius of balls.
      * @param v initial velocity of balls.
      */
-    public MyBouncingBallsSimulation(int w, int h, int n, float r, float v, int factor) {
+    public MyBouncingBallsSimulation(int w, int h, int n, float r, float v, int gridW, int gridH) {
         super(w, h, n, r, v);
-        initializeGrid(w, h, n, r, v, factor);
+        initializeGrid(w, h, n, r, v, gridW,gridH);
     }
-    private void initializeGrid(int w, int h, int n, float r, float v, int factor){
+    private void initializeGrid(int w, int h, int n, float r, float v, int gridW, int gridH){
         //These simply ensure that we never have to check any grid cells more than one grid space away!
-        int minW =  (int) Math.ceil(w / r);
-        int minH = (int) Math.ceil(h / r);
 
 
-        grid = new LinkedList[Math.max(minW, minW * factor)][Math.max(minH, minH * factor)];
+        grid = new LinkedList[gridW][gridH];
 
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
@@ -123,9 +121,13 @@ public class MyBouncingBallsSimulation extends BouncingBallsSimulation{
      * @param ball
      */
     public void handleBallCollisionsNear(int x, int y, Ball ball){
-        for(int i = -1; i<=1; i++){
-            for(int j = -1; j<=1; j++){
-                handleBallCollisionsAt(x+i,y+i,ball);
+        double cellW = w / (double) grid.length;
+        double cellH = h / (double) grid[0].length;
+        int searchW = 1 + (int) (r / cellW);
+        int searchH = 1 + (int) (r / cellH);
+        for(int i = -searchW; i<=searchW; i++){
+            for(int j = -searchH; j<=searchH; j++){
+                handleBallCollisionsAt(x+i,y+j,ball);
             }
         }
     }

@@ -14,7 +14,7 @@ public class BouncingBalls {
 
         int w = 500;
         int h = 500;
-        int n = 2000;
+        int n = 3000;
         float r = 4.f;
         float v = 0.2f;
 
@@ -25,7 +25,7 @@ public class BouncingBalls {
                 ,w,h,n,r);
 
         // Initialize the simulation and add it to the main frame.
-        BouncingBallsSimulation simulation = new MyBouncingBallsSimulation(w, h, n, r, v, 4);
+        BouncingBallsSimulation simulation = new MyBouncingBallsSimulation(w, h, n, r, v, 400,400);
         frame.add(simulation);
         simulation.setVisible(true);
 
