@@ -28,8 +28,11 @@ public class HuffmanCode {
         return code.toString();
     }
 
+
     /**
      * generates a huffmanTree for the encoding of symbols in the string s
+     * @param s
+     * @return
      */
     public static Node huffmanTree(String s) {
         HashMap<Character, Integer> occurrenceMap = new HashMap<Character, Integer>();
@@ -52,6 +55,13 @@ public class HuffmanCode {
         buildPrefixCodeMap(huffmanTree, prefixCodeMap, "");
         return prefixCodeMap;
     }
+
+    /**
+     * recursively builds a prefix code map of the huffmanTree
+     * @param huffmanTree
+     * @param prefixCodeMap
+     * @param code
+     */
     public static void buildPrefixCodeMap(Node huffmanTree, HashMap<Character, String> prefixCodeMap, String code){
         if(huffmanTree.left == null){
             prefixCodeMap.put(huffmanTree.symbol, code);
@@ -71,19 +81,29 @@ public class HuffmanCode {
         int occurrence;
         Character symbol;
 
+        /**
+         * builds a leaf node from the given symbol and its occurrence
+         * @param symbol
+         * @param occurrence
+         */
         public Node(Character symbol, int occurrence){
             this.symbol = symbol;
             this.occurrence = occurrence;
             left = null;
             right = null;
         }
+
+        /**
+         * builds a parent node from the given child nodes
+         * @param left
+         * @param right
+         */
         public Node(Node left, Node right){
             this.left = left;
             this.right = right;
             this.occurrence = left.occurrence + right.occurrence;
             symbol = Character.MAX_VALUE;
         }
-
         @Override
         public int compareTo(Node o) {
             return Integer.compare(occurrence, o.occurrence);
