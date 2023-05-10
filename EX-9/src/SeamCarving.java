@@ -211,7 +211,7 @@ public class SeamCarving {
         int seam[];
 
         try {
-            img = ImageIO.read(new File("EX-9/test3.jpg"));
+            img = ImageIO.read(new File("EX-9/test0.jpg"));
         } catch (Exception e) {
             System.out.printf("Could not read image file!\n");
             return;
@@ -230,7 +230,7 @@ public class SeamCarving {
 
             if (n % 50 == 0) {
                 try {
-                    ImageIO.write(img, "png", new File("results/result3_" + Integer.toString(n) + ".png"));
+                    ImageIO.write(img, "png", new File("results/result0_" + Integer.toString(n) + ".png"));
                 } catch (Exception e) {
                     e.printStackTrace();
                     return;
